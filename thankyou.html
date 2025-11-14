@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Complete - Mes Medical</title>
+    <style>
+        body { 
+            background-color: lightblue; 
+            font-family: Arial, sans-serif;
+            color: darkblue;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .header { 
+            background-color: blue; 
+            color: white; 
+            padding: 15px; 
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 28px;
+            margin: 10px 0;
+            font-family: Georgia, serif;
+        }
+
+        .logo { 
+            background-color: red; 
+            width: 25px; 
+            height: 25px; 
+            display: inline-block;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .main-content {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .success-icon {
+            font-size: 72px;
+            color: green;
+            margin: 20px 0;
+        }
+
+        h2 {
+            color: darkblue;
+            font-family: Georgia, serif;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+
+        .info-box {
+            background-color: #f0f8ff;
+            border: 2px solid blue;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 600px;
+        }
+
+        button {
+            padding: 12px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            background-color: blue;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .footer { 
+            background-color: gray; 
+            color: white; 
+            padding: 15px; 
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .footer button {
+            background-color: darkblue;
+            color: white;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo"></div>
+        <h1>Mes Medical</h1>
+        Today is: <span id="date"></span>
+    </div>
+
+    <div class="main-content">
+        <div class="success-icon">✓</div>
+        
+        <h2>Registration Successful!</h2>
+        
+        <p>Thank you for registering with Mes Medical.</p>
+        
+        <div class="info-box">
+            <h3 style="color: darkblue; margin-top: 0;">What's Next?</h3>
+            <p style="text-align: left;">
+                ✓ Your registration has been received<br>
+                ✓ You will receive a confirmation email shortly<br>
+                ✓ Our staff will contact you within 24-48 hours<br>
+                ✓ Please check your email for appointment details
+            </p>
+        </div>
+
+        <p><strong>Important:</strong> Please save your User ID for future logins.</p>
+        
+        <p>If you have any questions or need immediate assistance, please contact us.</p>
+
+        <div style="margin-top: 30px;">
+            <button onclick="window.location.href='index.html'">Return to Registration</button>
+            <button onclick="alert('Contact: (713) 555-DOCS\nEmail: info@mesmedical.com')">Contact Us</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        Mes Medical - 123 Main St, Houston, TX 77001
+        <br>
+        Phone: (713) 555-DOCS | Email: info@mesmedical.com
+        <br>
+        <small>&copy; 2025 Mes Medical. All rights reserved.</small>
+    </div>
+
+    <script>
+        // Display current date
+        document.getElementById('date').innerHTML = new Date().toDateString();
+    </script>
+
+</body>
+</html>
